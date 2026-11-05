@@ -55,20 +55,3 @@ bash scripts/run_bulk.sh
 ```
 
 The figure source tables are committed, so final figures can also be regenerated directly with `Rscript scripts/run_r.R scripts/publication_figures.R` after restoring dependencies. Earlier stages require the downloaded public matrices and regenerated Seurat objects. Large matrices and R objects are excluded from version control. `celltypes_consensus.tsv` is guarded by a cell-to-cluster fingerprint: if recomputation changes assignments, review the mapping before applying it.
-
-## Methods and audit trail
-
-- [Dataset validation and experimental design](docs/DATASETS.md)
-- [QC and provisional annotation](docs/SC_QC_ANNOTATION.md)
-- [Doublet sensitivity and reclustering](docs/SC_SENSITIVITY.md)
-- [Mouse-level pseudobulk](docs/SC_PSEUDOBULK.md)
-- [Hallmark analysis and figure methods](docs/SC_PATHWAYS.md)
-- [Environment status](docs/ENVIRONMENT.md) and [validation record](metadata/VALIDATION.md)
-
-Raw integer UMIs are aggregated by biological mouse tag, never treated as cell-level treatment replicates. Primary pseudobulk models require coverage in all six comparison mice. Both within-population and across-population adjusted values are exported, alongside six leave-one-mouse-out fits per population. Public input files, package sources and gene-set versions have recorded checksums.
-
-## Attribution and scope
-
-Credit the [GSE338157 submitters](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE338157), [GSE247373 investigators](https://pubmed.ncbi.nlm.nih.gov/38896080/), GEO and the cited software. MSigDB MH v2026.2.Mm is used under its [CC BY 4.0 / MSigDB terms](https://gsea-msigdb.org/gsea/msigdb_license_terms.jsp); detailed attribution is in the captions and annotation-data README. Original data retain their submitters' terms.
-
-No unpublished personal research data or scripts are included. This project demonstrates transparent analysis and scientific judgment; it does not claim original data generation, validated treatment efficacy or raw-FASTQ reprocessing. Multimodal coursework is on hold and outside this release.
