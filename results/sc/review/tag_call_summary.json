@@ -1,0 +1,35 @@
+[
+  {
+    "file": "GSM9868022_CCl4_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "total_called_barcodes": 15557,
+    "calls": {
+      "SampleTag02_mm": 4701,
+      "SampleTag03_mm": 4797,
+      "Multiplet": 793,
+      "SampleTag01_mm": 4701,
+      "Undetermined": 565
+    }
+  },
+  {
+    "file": "GSM9868023_ACLF_VEH_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "total_called_barcodes": 30000,
+    "calls": {
+      "SampleTag06_mm": 7309,
+      "SampleTag05_mm": 7031,
+      "Multiplet": 934,
+      "SampleTag04_mm": 6967,
+      "Undetermined": 7759
+    }
+  },
+  {
+    "file": "GSM9868024_ACLF_CCS_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "total_called_barcodes": 30000,
+    "calls": {
+      "SampleTag10_mm": 6720,
+      "SampleTag12_mm": 8399,
+      "Multiplet": 989,
+      "SampleTag11_mm": 6414,
+      "Undetermined": 7478
+    }
+  }
+]

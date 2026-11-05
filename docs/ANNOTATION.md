@@ -1,0 +1,13 @@
+Latest stage: [doublet sensitivity and reclustering](SC_SENSITIVITY.md). The earlier instructions below describe the baseline review; use `config/celltypes_consensus.tsv` and the retained-branch cell annotations for subsequent review.
+
+# Annotation workflow and next inference stage
+
+The first provisional review is complete: see [QC and annotation findings](SC_QC_ANNOTATION.md). The mapping now exists in `config/celltypes.tsv`, with per-cell exports in `results/sc/review/`. Statistical doublet modeling and a separately named stricter-QC rerun remain pending.
+
+The baseline clustering keeps numeric IDs. Use `exploratory_cluster_markers.csv`, `immune_markers.pdf`, the sample composition table and the Seurat object to review each cluster. Maintain the reviewed mapping in `config/celltypes.tsv` with columns `cluster`, `cell_type`, `supporting_markers`, `conflicting_markers`, `confidence`, and `review_notes`.
+
+Candidate mouse immune marker panels (not automatic labels): T cells Cd3d/Cd3e; B cells Ms4a1/Cd79a; NK cells Nkg7 with cytotoxic markers and absent T-cell markers; macrophage/monocyte populations Lyz2/Csf1r/Adgre1; neutrophils Ly6g/S100a8/S100a9; dendritic populations Flt3/Itgax with subtype-specific markers. Shared markers alone are insufficient. Check proliferation, stress, mitochondrial enrichment, potential doublets, platelet/erythroid contamination and ambient RNA before naming rare clusters. CD45 enrichment does not guarantee pure immune populations.
+
+For inferential comparisons, aggregate **raw UMI counts** by sample tag and reviewed cell type, not by cluster-normalized means or integrated expression. Report cells per mouse per cell type and set a justified minimum contribution; do not replace a missing cell population with a fabricated expression sample. Compare ACLF plus CCS1477 with ACLF plus vehicle within each supported cell type using biological mouse tags as the units. Confirm three tags per group and the design described in GEO. Adjust for gene-level multiple testing, state any additional correction across cell types, and distinguish exploratory pathway analysis from confirmatory tests. The condition/library confounding remains a limitation even with mouse-level pseudobulk.
+
+Before release, repeat the baseline with reasonable QC and clustering alternatives and check whether interpretation changes. Do not select thresholds solely to reproduce a desired drug response. Cross-check the bulk study's neutrophil patterns as context; the two datasets differ in injury model, protocol and sampling, so agreement is not an independent replication of the same experiment.

@@ -1,0 +1,7 @@
+suppressPackageStartupMessages({library(Seurat);library(ggplot2);library(patchwork)})
+s <- readRDS("results/sc/seurat.rds")
+p <- DimPlot(s,group.by="seurat_clusters",label=TRUE,raster=TRUE,shuffle=TRUE,seed=20261103)+DimPlot(s,group.by="condition",raster=TRUE,shuffle=TRUE,seed=20261103)
+ggsave("results/sc/umap.png",p,width=12,height=5,dpi=160)
+ggsave("results/sc/umap.pdf",p,width=12,height=5)
+p <- DimPlot(s,group.by="sample_id",raster=TRUE,shuffle=TRUE,seed=20261103)
+ggsave("results/sc/umap_by_sample.png",p,width=8,height=6,dpi=160)

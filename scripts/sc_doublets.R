@@ -1,0 +1,46 @@
+suppressPackageStartupMessages({library(Seurat);library(scDblFinder);library(SingleCellExperiment);library(BiocParallel);library(jsonlite)})
+source("scripts/sc_sensitivity_helpers.R")
+x<-load_strict_inputs();dir.create("results/sc/doublets",recursive=TRUE,showWarnings=FALSE)
+dep_names<-c("scDblFinder","xgboost","scater","scran","scuttle","bluster","BiocSingular","BiocNeighbors","beachmat","metapod","ScaledMatrix","assorthead","edgeR","S4Vectors")
+dep_versions<-setNames(vapply(dep_names,function(p)as.character(packageVersion(p)),character(1)),dep_names)
+input_sha<-digest::digest(file="results/sc/seurat.rds",algo="sha256")
+signature<-digest::digest(list(cfg=cfg,input=input_sha,dependencies=dep_versions))
+if(file.exists("results/sc/doublets/COMPLETE"))unlink("results/sc/doublets/COMPLETE")
+jsonlite::write_json(list(config=cfg,baseline_sha256=input_sha,dependencies=as.list(dep_versions),signature=signature),"results/sc/doublets/run_parameters.json",auto_unbox=TRUE,pretty=TRUE)
+all_results<-list()
+for(capture in sort(unique(x$meta$capture))){
+ idx<-which(x$meta$capture==capture)
+ sce<-SingleCellExperiment(assays=list(counts=x$counts[,idx,drop=FALSE]))
+ for(rate in cfg$doublet_rate_scenarios){
+  key<-paste0(capture,"_rate",sprintf("%03d",round(rate*1000)))
+  path<-file.path("results/sc/doublets",paste0(key,".csv"));sigpath<-paste0(path,".signature")
+  if(file.exists(path)&&file.exists(sigpath)&&identical(readLines(sigpath),signature)){
+   r<-read.csv(path,stringsAsFactors=FALSE);stopifnot(setequal(r$cell_id,colnames(sce)))
+   cat("Reusing verified",key,"\n")
+  }else{
+   set.seed(cfg$seed)
+   cat("Modeling",key,"cells",ncol(sce),"\n")
+   fit<-scDblFinder(sce,clusters=FALSE,dbr=rate,nfeatures=cfg$doublet_features,dims=cfg$doublet_dimensions,artificialDoublets=cfg$artificial_doublets_per_capture,BPPARAM=SerialParam(progressbar=FALSE),verbose=TRUE)
+   r<-data.frame(cell_id=colnames(fit),capture=capture,assumed_rate=rate,score=fit$scDblFinder.score,predicted_class=as.character(fit$scDblFinder.class))
+   stopifnot(nrow(r)==length(idx),!anyNA(r),all(is.finite(r$score)))
+   write.csv(r,paste0(path,".tmp"),row.names=FALSE);stopifnot(file.rename(paste0(path,".tmp"),path));writeLines(signature,sigpath)
+   rm(fit);gc()
+  }
+  all_results[[key]]<-r
+ }
+ rm(sce);gc()
+}
+r<-do.call(rbind,all_results)
+wide<-reshape(r[,c("cell_id","assumed_rate","predicted_class")],idvar="cell_id",timevar="assumed_rate",direction="wide")
+vote<-rowSums(wide[,-1,drop=FALSE]=="doublet")
+m<-x$meta;m$cell_id<-rownames(m)
+i<-match(m$cell_id,wide$cell_id);stopifnot(!anyNA(i))
+m$doublet_votes<-vote[i];m$consensus_doublet<-m$doublet_votes==length(cfg$doublet_rate_scenarios)
+m$rate_sensitive_call<-m$doublet_votes>0&!m$consensus_doublet
+write.csv(m,"results/sc/doublets/cell_doublet_summary.csv",row.names=FALSE)
+write.csv(r,"results/sc/doublets/all_scenario_calls.csv",row.names=FALSE)
+summary<-aggregate(predicted_class~capture+assumed_rate,r,function(v)c(cells=length(v),doublets=sum(v=="doublet")))
+summary<-data.frame(capture=summary$capture,assumed_rate=summary$assumed_rate,cells=summary$predicted_class[,1],predicted_doublets=summary$predicted_class[,2])
+write.csv(summary,"results/sc/doublets/scenario_summary.csv",row.names=FALSE)
+writeLines(capture.output(sessionInfo()),"results/sc/doublets/sessionInfo.txt")
+writeLines(signature,"results/sc/doublets/COMPLETE")

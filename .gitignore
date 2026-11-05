@@ -1,0 +1,10 @@
+data/raw/*
+data/processed/*
+results/**/*.rds
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+*.part
+__pycache__/

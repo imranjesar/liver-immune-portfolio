@@ -1,0 +1,31 @@
+{
+  "library": "fresh separate library hydrated from locally installed packages, followed by renv restore",
+  "locked_packages": 219,
+  "versions_exact": true,
+  "bulk_independent_output_rerun": true,
+  "byte_identical_csv": {
+    "pca_variance.csv": true,
+    "rank_feature_selection.csv": true,
+    "pca.csv": true,
+    "ranks_all_valid_features.csv": true,
+    "model_samples.csv": true,
+    "hallmark.csv": true,
+    "gene_annotation.csv": true,
+    "ranks_exclude_flagged_features.csv": true,
+    "cross_study_context.csv": true,
+    "library_qc.csv": true,
+    "differential_expression.csv": true,
+    "leave_one_out.csv": true,
+    "sample_distances.csv": true,
+    "annotation_all_mappings.csv": true
+  },
+  "full_source_download_restore": false,
+  "full_sc_recomputation": false,
+  "existing_sc_checks": [
+    "doublet input and cell conservation",
+    "annotation fingerprint and coverage",
+    "pseudobulk count conservation and contrast",
+    "Hallmark and figure source tables"
+  ],
+  "multimodal": "on hold"
+}

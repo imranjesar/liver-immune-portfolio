@@ -1,0 +1,7 @@
+"PC1","PC2","group","name","sample_id","population","aggregate_id","condition","capture","n_cells","total_umi","sizeFactor"
+-1.17701224737046,2.57585680789658,"aclf_ccs1477","pDC__tag10","tag10","pDC","pDC__tag10","aclf_ccs1477","GSM9868024",85,1245432,1.17745750847747
+-2.68239191162182,3.02954329049435,"aclf_ccs1477","pDC__tag11","tag11","pDC","pDC__tag11","aclf_ccs1477","GSM9868024",77,1122167,1.05127204087888
+-5.12001362253995,-3.43951278980652,"aclf_ccs1477","pDC__tag12","tag12","pDC","pDC__tag12","aclf_ccs1477","GSM9868024",57,868146,0.80950654891678
+2.6887048686386,-0.701441233907038,"aclf_vehicle","pDC__tag04","tag04","pDC","pDC__tag04","aclf_vehicle","GSM9868023",72,1061552,1.01625333233654
+3.11527958485338,-1.39815776790522,"aclf_vehicle","pDC__tag05","tag05","pDC","pDC__tag05","aclf_vehicle","GSM9868023",62,836629,0.79870072750121
+3.17543332804025,-0.0662883067721519,"aclf_vehicle","pDC__tag06","tag06","pDC","pDC__tag06","aclf_vehicle","GSM9868023",90,1288934,1.22951324909667

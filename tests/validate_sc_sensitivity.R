@@ -1,0 +1,28 @@
+cfg<-jsonlite::fromJSON("config/sc_sensitivity.json")
+b<-read.csv("results/sc/qc_after.csv",row.names=1)
+expected<-rownames(b)[b$nFeature_RNA>=cfg$min_features&b$nFeature_RNA<=cfg$max_features&b$percent.mt<=cfg$max_mito_percent]
+s<-read.csv("results/sc/strict500/cell_metadata.csv",stringsAsFactors=FALSE)
+stopifnot(file.exists("results/sc/strict500/COMPLETE"),setequal(s$cell_id,expected),!anyDuplicated(s$cell_id),length(unique(s$sample_id))==9)
+d<-read.csv("results/sc/doublets/cell_doublet_summary.csv",stringsAsFactors=FALSE)
+r<-read.csv("results/sc/doublets/all_scenario_calls.csv",stringsAsFactors=FALSE)
+stopifnot(file.exists("results/sc/doublets/COMPLETE"),setequal(d$cell_id,expected),nrow(r)==length(expected)*3,!anyDuplicated(paste(r$cell_id,r$assumed_rate)),all(is.finite(r$score)),length(unique(r$capture))==3)
+votes<-tapply(r$predicted_class=="doublet",r$cell_id,sum)
+stopifnot(all(d$doublet_votes==votes[d$cell_id]),all(d$consensus_doublet==(d$doublet_votes==3)),all(d$rate_sensitive_call==(d$doublet_votes>0 & d$doublet_votes<3)))
+samples<-read.delim("config/sc_samples.tsv")
+stopifnot(all(d$capture==samples$gsm[match(d$sample_id,samples$sample_id)]))
+c<-read.csv("results/sc/strict500_consensus/cell_metadata.csv",stringsAsFactors=FALSE)
+stopifnot(file.exists("results/sc/strict500_consensus/COMPLETE"),setequal(c$cell_id,d$cell_id[!d$consensus_doublet]),length(unique(c$sample_id))==9)
+stopifnot(sum(d$consensus_doublet)+nrow(c)==length(expected))
+cat("Sensitivity inputs, capture assignments, doublet votes and retained-cell conservation passed\n")
+
+sig<-readLines("results/sc/doublets/COMPLETE")
+paths<-list.files("results/sc/doublets",pattern="[.]signature$",full.names=TRUE)
+stopifnot(length(paths)==9,all(vapply(paths,function(p)identical(readLines(p),sig),logical(1))))
+suppressPackageStartupMessages(library(Seurat))
+for(stage in c("strict500","strict500_consensus")){
+ obj<-readRDS(file.path("results/sc",stage,"seurat.rds"))
+ meta<-read.csv(file.path("results/sc",stage,"cell_metadata.csv"))
+ stopifnot(setequal(colnames(obj),meta$cell_id),!anyDuplicated(colnames(obj)),all(is.finite(Embeddings(obj,"umap"))))
+ rm(obj);gc()
+}
+cat("Dependency signatures and both saved Seurat objects verified\n")

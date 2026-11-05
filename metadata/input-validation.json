@@ -1,0 +1,74 @@
+[
+  {
+    "sample_id": "tag01",
+    "gsm": "GSM9868022",
+    "condition": "fibrosis",
+    "matrix_dir": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag01",
+    "cells": 4701,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag02",
+    "gsm": "GSM9868022",
+    "condition": "fibrosis",
+    "matrix_dir": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag02",
+    "cells": 4701,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag03",
+    "gsm": "GSM9868022",
+    "condition": "fibrosis",
+    "matrix_dir": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag03",
+    "cells": 4797,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag04",
+    "gsm": "GSM9868023",
+    "condition": "aclf_vehicle",
+    "matrix_dir": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag04",
+    "cells": 6967,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag05",
+    "gsm": "GSM9868023",
+    "condition": "aclf_vehicle",
+    "matrix_dir": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag05",
+    "cells": 7031,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag06",
+    "gsm": "GSM9868023",
+    "condition": "aclf_vehicle",
+    "matrix_dir": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag06",
+    "cells": 7309,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag10",
+    "gsm": "GSM9868024",
+    "condition": "aclf_ccs1477",
+    "matrix_dir": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag10",
+    "cells": 6720,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag11",
+    "gsm": "GSM9868024",
+    "condition": "aclf_ccs1477",
+    "matrix_dir": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag11",
+    "cells": 6414,
+    "tag_calls_verified": true
+  },
+  {
+    "sample_id": "tag12",
+    "gsm": "GSM9868024",
+    "condition": "aclf_ccs1477",
+    "matrix_dir": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag12",
+    "cells": 8399,
+    "tag_calls_verified": true
+  }
+]

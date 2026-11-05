@@ -1,0 +1,7 @@
+"sample_id","population","aggregate_id","condition","capture","n_cells","total_umi"
+"tag10","B_cells","B_cells__tag10","aclf_ccs1477","GSM9868024",2359,17248517
+"tag11","B_cells","B_cells__tag11","aclf_ccs1477","GSM9868024",1823,12786422
+"tag12","B_cells","B_cells__tag12","aclf_ccs1477","GSM9868024",2485,17188228
+"tag04","B_cells","B_cells__tag04","aclf_vehicle","GSM9868023",2341,14995726
+"tag05","B_cells","B_cells__tag05","aclf_vehicle","GSM9868023",2150,13431808
+"tag06","B_cells","B_cells__tag06","aclf_vehicle","GSM9868023",2517,15384056

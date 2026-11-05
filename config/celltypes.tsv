@@ -1,0 +1,27 @@
+cluster	cell_type	broad_type	confidence	qc_status	supporting_markers	conflicting_markers	review_notes
+0	B cells	B cells	high	provisional_lineage	Cd79a;Cd79b;Ms4a1;Tnfrsf13c	minor background T/myeloid transcripts	Concordant B lineage; not proof that every barcode is a singlet
+1	Low-complexity lymphoid (unresolved)	Low-complexity unresolved	low	hold_low_complexity	Bank1;Foxp1;Arhgap15	weak canonical lineage detection	Median 359 genes and 825 UMIs; mostly injury libraries; do not force B or T label
+2	Cytotoxic CD8 T cells	T cells	high	provisional_lineage	Cd3d;Cd3e;Trac;Cd8a;Cd8b1;Ccl5;Gzmk	Klrd1 shared with innate lymphocytes	Strong TCR and CD8 program distinguishes from NK
+3	TCF7+ CD4 T cells	T cells	high	provisional_lineage	Cd3d;Cd3e;Trac;Cd4;Tcf7;Igfbp4	naive vs memory not established	Use TCF7+ rather than definitive naive designation
+4	Low-complexity myeloid-like (unresolved)	Low-complexity unresolved	low	hold_low_complexity	Lyz2;Tyrobp;Fcer1g;Ctss	weak canonical lineage detection	Median 427.5 genes and 938.5 UMIs; subtype and intact-cell status unresolved
+5	TCF7+ CD8 T cells	T cells	high	provisional_lineage	Cd3d;Cd3e;Trac;Cd8a;Cd8b1;Tcf7;Dapl1	naive vs memory not established	Conservative marker-defined state
+6	CD4 T cells (Treg-enriched)	T cells	moderate	provisional_lineage	Cd3d;Cd3e;Trac;Cd4;Foxp3;Il2ra;Ikzf2	Foxp3 in only 35.1% of cells	Do not equate whole cluster with purified regulatory T cells
+7	Chil3+ monocytes/macrophage-like cells	Monocytes	moderate	provisional_lineage	Csf1r;Adgre1;Fcgr1;Chil3;Vcan;F13a1	high RNA complexity; low-level T background	Monocyte versus monocyte-derived macrophage boundary requires subclustering
+8	S100a8+ neutrophils	Neutrophils	moderate	provisional_lineage	S100a8;S100a9;Retnlg;Cxcr2;Il1b	Ly6g in only 22% of cells; Csf1r common	Do not assign an activation or maturity trajectory without further evidence
+9	Innate-like/cytotoxic T cells (subtype unresolved)	T cells	moderate	provisional_lineage	Cd3d;Cd3e;Trac;Tcrg-C1;Tcrg-C4;Il2rb	Trdc in 17.5%; mixed alpha-beta and gamma-delta evidence	Broad T lineage only; no definitive gamma-delta or NKT designation
+10	NK cells	NK/ILC-like cells	high	provisional_lineage	Ncr1;Klrd1;Klra4;Klra8;Prf1	some Trdc; weak Cd3 transcripts	Ncr1 and Klrd1 in approximately 99%; no TCR-based NKT claim
+11	Mixed B/T lineage (doublet candidate)	Mixed-lineage unresolved	high	hold_mixed_lineage	Cd79a;Cd79b;Ms4a1;Cd3d;Cd3e;Trac	incompatible strong B and T programs in same barcodes	86.7% pass strong same-cell B/T coexpression screen; not activated CD4 cells
+12	Cycling lymphocytes (T-enriched)	Cycling unresolved	moderate	hold_state_lineage	Mki67;Top2a;Ccna2;Birc5;Cd3e;Trac	cycling program obscures lineage; B/T coexpression in subset	State annotation only; resolve lineage before pseudobulk
+13	NK/ILC-like cells (subtype unresolved)	NK/ILC-like cells	moderate	provisional_lineage	Ncr1;Klrd1;Xcl1;Klrb1b;Kit	Cd3e in 33%; Trac in 37%; Kit in 43%	Do not distinguish ILC1 from NK or innate-like T cells without focused review
+14	Cd300e+ monocytes	Monocytes	moderate	provisional_lineage	Csf1r;Adgre1;Cd300e;Ace;Treml4;Fcgr4	T background; lineage-boundary uncertainty	Do not call non-classical monocytes solely from Cd300e
+15	Plasmacytoid dendritic cells	pDC	high	provisional_lineage	Siglech;Flt3;Cox6a2;Tcf4;Cd209d	Cd4 and Klrd1 are shared markers	Siglech detected in all cells; Flt3 in about 90%
+16	C1q+ macrophages	Macrophages	high	provisional_lineage	Csf1r;Adgre1;Fcgr1;C1qa;C1qb;C1qc;Apoe	high RNA complexity and minor discordant expression	No definitive Kupffer-cell label without resident-marker validation
+17	Interferon-response B cells	B cells	high	provisional_lineage	Cd79a;Cd79b;Ms4a1;Ifit3;Ifit2;Oasl1	IFN is a state not an independent lineage	Broad lineage B; state IFN response
+18	Conventional DC-like cells (cDC2-like)	cDC-like cells	moderate	provisional_lineage	Flt3;Zbtb46;Cd209a;Clec10a;Itgax	Csf1r high; monocyte/DC boundary	cDC lineage supported; cDC2 remains tentative
+19	RORC+ T cells (gamma-delta-like)	T cells	moderate	provisional_lineage	Cd3d;Cd3e;Rorc;Il23r;Trdc;Sox13	Trac in 72%; Trdc in 42%	No definitive gamma-delta or IL17-producing designation
+20	IgA+ antibody-secreting cells	Antibody-secreting cells	high	provisional_lineage	Jchain;Mzb1;Igha;Sdc1;Tnfrsf17	cycling and B/T coexpression in subset	Mki67 in 61%; review suspicious barcodes; plasmablast vs plasma not resolved
+21	B cells (lower RNA content)	B cells	moderate	provisional_lineage	Cd79a;Cd79b;Ms4a1;Bank1;Ebf1	median mt 11.3%; lower complexity than main B cluster	Do not label a novel B-cell subtype from technical separation
+22	Ltf/Ngp+ neutrophils	Neutrophils	high	provisional_lineage	Ly6g;S100a8;Retnlg;Ltf;Ngp;Camp	small population; maturity not established	Granule-rich program; no maturation trajectory claim
+23	Eosinophil-like cells	Eosinophil-like cells	moderate	provisional_lineage	Ccr3;Alox15;Gata1;Siglecf	Epx and Prg2 sparse; Retnlg high	Ccr3 98% and Siglecf 41%; tentative identity pending orthogonal reference
+24	Basophils	Basophils	high	provisional_lineage	Mcpt8;Fcer1a;Ms4a2;Gata2;Cd200r3	T background; small cluster	Mcpt8 70%; Kit 6%; supports basophil rather than mast-cell label
+25	B cells with granulocyte program (unresolved)	Mixed-lineage unresolved	low	hold_mixed_lineage	Cd79a;Cd79b;Ms4a1;Ltf;Ngp;Camp	B identity plus granulocyte transcripts	41 cells; ambient RNA versus mixed barcodes unresolved; do not call a new B subtype

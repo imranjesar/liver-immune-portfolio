@@ -1,0 +1,9 @@
+population	clusters	interpretation
+B_cells	0,15	B lineage including interferon-response state
+CD4_T_cells	3	Conventional CD4 cluster; excludes Treg-enriched and innate-like populations
+CD8_T_cells	1,2,4	CD8 clusters combined; within-lineage state composition can vary
+NK_cells	9	High-confidence NK cluster; excludes uncertain NK/ILC-like cluster
+pDC	12	Plasmacytoid dendritic cells
+Antibody_secreting_cells	18	Antibody-secreting cluster; plasma/plasmablast subtype unresolved
+Ltf_Ngp_neutrophils	20	Granule-rich reviewed neutrophil subset; not all neutrophils
+Basophils	22	Reviewed basophil cluster

@@ -1,0 +1,10 @@
+# Run once on Ubuntu with a working R toolchain, then commit renv.lock.
+if (!requireNamespace("renv",quietly=TRUE)) install.packages("renv",repos="https://cloud.r-project.org")
+renv::init(bare=TRUE)
+renv::install(c("Seurat","data.table","ggplot2","patchwork","BiocManager"))
+renv::settings$bioconductor.version("3.21")
+renv::install("bioc::DESeq2@1.48.2")
+renv::install("immunogenomics/presto@7636b3d0465c468c35853f82f1717d3a64b3c8f6")
+renv::install("xgboost@1.7.11.1")
+renv::install("bioc::scDblFinder@1.22.0")
+renv::snapshot(prompt=FALSE)

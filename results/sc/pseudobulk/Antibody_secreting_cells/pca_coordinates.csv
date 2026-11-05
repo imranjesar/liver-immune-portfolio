@@ -1,0 +1,7 @@
+"PC1","PC2","group","name","sample_id","population","aggregate_id","condition","capture","n_cells","total_umi","sizeFactor"
+-5.80064644346371,-3.54552890749413,"aclf_ccs1477","Antibody_secreting_cells__tag10","tag10","Antibody_secreting_cells","Antibody_secreting_cells__tag10","aclf_ccs1477","GSM9868024",29,707558,0.988131945393902
+-2.39271623565267,9.75118376896597,"aclf_ccs1477","Antibody_secreting_cells__tag11","tag11","Antibody_secreting_cells","Antibody_secreting_cells__tag11","aclf_ccs1477","GSM9868024",39,818721,1.10968615724105
+-7.10785171256081,-0.841006892635505,"aclf_ccs1477","Antibody_secreting_cells__tag12","tag12","Antibody_secreting_cells","Antibody_secreting_cells__tag12","aclf_ccs1477","GSM9868024",42,699379,0.910747595136277
+3.24628250298902,-7.41462265432048,"aclf_vehicle","Antibody_secreting_cells__tag04","tag04","Antibody_secreting_cells","Antibody_secreting_cells__tag04","aclf_vehicle","GSM9868023",39,1027872,1.30463605131651
+8.47720662061979,2.76017324610823,"aclf_vehicle","Antibody_secreting_cells__tag05","tag05","Antibody_secreting_cells","Antibody_secreting_cells__tag05","aclf_vehicle","GSM9868023",24,548503,0.705815463242062
+3.57772526806839,-0.710198560624082,"aclf_vehicle","Antibody_secreting_cells__tag06","tag06","Antibody_secreting_cells","Antibody_secreting_cells__tag06","aclf_vehicle","GSM9868023",41,855508,1.08744253027006

@@ -1,0 +1,12 @@
+[
+  {
+    "package_source_url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/scDblFinder_1.22.0.tar.gz",
+    "filename": "scDblFinder_1.22.0.tar.gz",
+    "sha256": "1af9f77ab7257a021c94fafa82a63982cbcf279707a76a56a146d9388732d622"
+  },
+  {
+    "package_source_url": "https://cloud.r-project.org/src/contrib/Archive/xgboost/xgboost_1.7.11.1.tar.gz",
+    "filename": "xgboost_1.7.11.1.tar.gz",
+    "sha256": "c15b631be77ae17fef46166abffb3336738a812c219d82c601bc70664a88d7c5"
+  }
+]

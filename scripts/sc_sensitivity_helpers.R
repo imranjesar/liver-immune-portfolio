@@ -1,0 +1,46 @@
+suppressPackageStartupMessages({library(Seurat);library(ggplot2);library(Matrix);library(patchwork);library(jsonlite)})
+cfg<-jsonlite::fromJSON("config/sc_sensitivity.json")
+fast_save<-function(x,path){con<-gzfile(path,"wb",compression=1);on.exit(close(con));saveRDS(x,con)}
+rerun_sc<-function(counts,meta,out,markers=FALSE){
+ dir.create(out,recursive=TRUE,showWarnings=FALSE)
+ if(file.exists(file.path(out,"COMPLETE")))unlink(file.path(out,"COMPLETE"))
+ set.seed(cfg$seed)
+ s<-CreateSeuratObject(counts,meta.data=meta,min.cells=3,project=basename(out))
+ s<-NormalizeData(s,verbose=FALSE);s<-FindVariableFeatures(s,nfeatures=2000,verbose=FALSE)
+ s<-ScaleData(s,features=VariableFeatures(s),verbose=FALSE)
+ s<-RunPCA(s,npcs=cfg$pca_dimensions,verbose=FALSE)
+ s<-FindNeighbors(s,dims=seq_len(cfg$clustering_dimensions),verbose=FALSE)
+ s<-FindClusters(s,resolution=cfg$resolution,random.seed=cfg$seed,verbose=FALSE)
+ s<-RunUMAP(s,dims=seq_len(cfg$clustering_dimensions),seed.use=cfg$seed,verbose=FALSE)
+ m<-s[[]];m$cell_id<-rownames(m)
+ write.csv(m,file.path(out,"cell_metadata.csv"),row.names=FALSE)
+ overlap<-as.data.frame(table(m$seurat_clusters,m$baseline_cluster));names(overlap)<-c("new_cluster","baseline_cluster","cells")
+ write.csv(overlap,file.path(out,"baseline_cluster_overlap.csv"),row.names=FALSE)
+ broad<-as.data.frame(table(m$seurat_clusters,m$baseline_broad_type));names(broad)<-c("new_cluster","baseline_broad_type","cells")
+ write.csv(broad,file.path(out,"baseline_lineage_overlap.csv"),row.names=FALSE)
+ p<-DimPlot(s,group.by="seurat_clusters",label=TRUE,shuffle=TRUE,seed=cfg$seed,raster=TRUE)+DimPlot(s,group.by="baseline_broad_type",shuffle=TRUE,seed=cfg$seed,raster=TRUE)
+ ggsave(file.path(out,"clusters_and_baseline_labels.png"),p,width=15,height=6,dpi=150,bg="white")
+ p<-DimPlot(s,group.by="sample_id",shuffle=TRUE,seed=cfg$seed,raster=TRUE)
+ ggsave(file.path(out,"umap_by_mouse.png"),p,width=9,height=6,dpi=150,bg="white")
+ gs<-intersect(c("Cd79a","Ms4a1","Cd3d","Cd3e","Trac","Cd4","Cd8a","Foxp3","Trdc","Ncr1","Klrd1","Csf1r","Adgre1","C1qa","Ly6g","S100a8","Retnlg","Flt3","Siglech","Zbtb46","Cd209a","Jchain","Mzb1","Ccr3","Siglecf","Mcpt8","Kit","Mki67","Ifit3"),rownames(s))
+ p<-DotPlot(s,features=gs)+RotatedAxis()
+ ggsave(file.path(out,"lineage_marker_panel.png"),p,width=17,height=10,dpi=150,bg="white")
+ x<-GetAssayData(s,layer="counts")[gs,,drop=FALSE]
+ evidence<-do.call(rbind,lapply(levels(Idents(s)),function(cl){i<-which(Idents(s)==cl);data.frame(cluster=cl,gene=gs,pct=100*Matrix::rowMeans(x[,i,drop=FALSE]>0),mean_umi=Matrix::rowMeans(x[,i,drop=FALSE]))}))
+ write.csv(evidence,file.path(out,"marker_evidence.csv"),row.names=FALSE)
+ fast_save(s,file.path(out,"seurat.rds"))
+ if(markers){mk<-FindAllMarkers(s,only.pos=TRUE,min.pct=.25,logfc.threshold=.25,verbose=FALSE);write.csv(mk,file.path(out,"cluster_markers.csv"),row.names=FALSE)}
+ writeLines(capture.output(sessionInfo()),file.path(out,"sessionInfo.txt"))
+ writeLines("COMPLETE",file.path(out,"COMPLETE"))
+ invisible(NULL)
+}
+load_strict_inputs<-function(){
+ s<-readRDS("results/sc/seurat.rds");a<-read.csv(gzfile("results/sc/review/cell_annotations.csv.gz"),stringsAsFactors=FALSE)
+ m<-s[[]];m$baseline_cluster<-as.character(m$seurat_clusters)
+ i<-match(rownames(m),a$cell_id);stopifnot(!anyNA(i))
+ m$baseline_broad_type<-a$broad_type[i];m$baseline_qc_status<-a$qc_status[i]
+ m$seurat_clusters<-NULL
+ samples<-read.delim("config/sc_samples.tsv");m$capture<-samples$gsm[match(m$sample_id,samples$sample_id)]
+ keep<-m$nFeature_RNA>=cfg$min_features&m$nFeature_RNA<=cfg$max_features&m$percent.mt<=cfg$max_mito_percent
+ list(counts=GetAssayData(s,layer="counts")[,keep,drop=FALSE],meta=m[keep,,drop=FALSE])
+}

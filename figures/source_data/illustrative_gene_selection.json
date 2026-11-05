@@ -1,0 +1,5 @@
+{
+  "rule": "Top six by median global q among gene-population discoveries; gene significant in >=3 populations and IFN-alpha/gamma primary leading edge in >=3 populations; display exclusions: mt, Rp[sl][0-9], Ig variable, Gm-prefixed symbols",
+  "selected_genes": ["Ly6e", "Tapbp", "Samhd1", "Samd9l", "B2m", "Pml"],
+  "scope": "Data-selected illustration, not independent validation or a prespecified gene panel"
+}

@@ -1,0 +1,337 @@
+"new_cluster","baseline_broad_type","cells"
+"0","Antibody-secreting cells",0
+"1","Antibody-secreting cells",0
+"2","Antibody-secreting cells",0
+"3","Antibody-secreting cells",0
+"4","Antibody-secreting cells",0
+"5","Antibody-secreting cells",0
+"6","Antibody-secreting cells",0
+"7","Antibody-secreting cells",0
+"8","Antibody-secreting cells",0
+"9","Antibody-secreting cells",0
+"10","Antibody-secreting cells",0
+"11","Antibody-secreting cells",0
+"12","Antibody-secreting cells",0
+"13","Antibody-secreting cells",0
+"14","Antibody-secreting cells",0
+"15","Antibody-secreting cells",0
+"16","Antibody-secreting cells",0
+"17","Antibody-secreting cells",0
+"18","Antibody-secreting cells",318
+"19","Antibody-secreting cells",0
+"20","Antibody-secreting cells",0
+"21","Antibody-secreting cells",0
+"22","Antibody-secreting cells",0
+"23","Antibody-secreting cells",0
+"0","B cells",17032
+"1","B cells",0
+"2","B cells",0
+"3","B cells",0
+"4","B cells",0
+"5","B cells",432
+"6","B cells",0
+"7","B cells",0
+"8","B cells",0
+"9","B cells",0
+"10","B cells",0
+"11","B cells",0
+"12","B cells",0
+"13","B cells",0
+"14","B cells",1
+"15","B cells",607
+"16","B cells",1
+"17","B cells",0
+"18","B cells",0
+"19","B cells",0
+"20","B cells",0
+"21","B cells",0
+"22","B cells",0
+"23","B cells",4
+"0","Basophils",0
+"1","Basophils",0
+"2","Basophils",0
+"3","Basophils",0
+"4","Basophils",0
+"5","Basophils",0
+"6","Basophils",0
+"7","Basophils",0
+"8","Basophils",0
+"9","Basophils",0
+"10","Basophils",0
+"11","Basophils",0
+"12","Basophils",0
+"13","Basophils",0
+"14","Basophils",0
+"15","Basophils",0
+"16","Basophils",0
+"17","Basophils",0
+"18","Basophils",0
+"19","Basophils",0
+"20","Basophils",0
+"21","Basophils",0
+"22","Basophils",126
+"23","Basophils",0
+"0","cDC-like cells",0
+"1","cDC-like cells",0
+"2","cDC-like cells",1
+"3","cDC-like cells",0
+"4","cDC-like cells",0
+"5","cDC-like cells",0
+"6","cDC-like cells",0
+"7","cDC-like cells",2
+"8","cDC-like cells",2
+"9","cDC-like cells",0
+"10","cDC-like cells",0
+"11","cDC-like cells",0
+"12","cDC-like cells",0
+"13","cDC-like cells",0
+"14","cDC-like cells",0
+"15","cDC-like cells",0
+"16","cDC-like cells",1
+"17","cDC-like cells",482
+"18","cDC-like cells",0
+"19","cDC-like cells",0
+"20","cDC-like cells",0
+"21","cDC-like cells",0
+"22","cDC-like cells",0
+"23","cDC-like cells",0
+"0","Cycling unresolved",2
+"1","Cycling unresolved",27
+"2","Cycling unresolved",19
+"3","Cycling unresolved",1
+"4","Cycling unresolved",36
+"5","Cycling unresolved",71
+"6","Cycling unresolved",7
+"7","Cycling unresolved",0
+"8","Cycling unresolved",0
+"9","Cycling unresolved",0
+"10","Cycling unresolved",22
+"11","Cycling unresolved",1
+"12","Cycling unresolved",0
+"13","Cycling unresolved",0
+"14","Cycling unresolved",597
+"15","Cycling unresolved",0
+"16","Cycling unresolved",1
+"17","Cycling unresolved",2
+"18","Cycling unresolved",0
+"19","Cycling unresolved",0
+"20","Cycling unresolved",0
+"21","Cycling unresolved",0
+"22","Cycling unresolved",0
+"23","Cycling unresolved",0
+"0","Eosinophil-like cells",0
+"1","Eosinophil-like cells",0
+"2","Eosinophil-like cells",0
+"3","Eosinophil-like cells",0
+"4","Eosinophil-like cells",0
+"5","Eosinophil-like cells",0
+"6","Eosinophil-like cells",0
+"7","Eosinophil-like cells",0
+"8","Eosinophil-like cells",0
+"9","Eosinophil-like cells",0
+"10","Eosinophil-like cells",0
+"11","Eosinophil-like cells",0
+"12","Eosinophil-like cells",0
+"13","Eosinophil-like cells",0
+"14","Eosinophil-like cells",0
+"15","Eosinophil-like cells",0
+"16","Eosinophil-like cells",0
+"17","Eosinophil-like cells",0
+"18","Eosinophil-like cells",0
+"19","Eosinophil-like cells",0
+"20","Eosinophil-like cells",0
+"21","Eosinophil-like cells",158
+"22","Eosinophil-like cells",0
+"23","Eosinophil-like cells",0
+"0","Low-complexity unresolved",49
+"1","Low-complexity unresolved",4
+"2","Low-complexity unresolved",2
+"3","Low-complexity unresolved",0
+"4","Low-complexity unresolved",7
+"5","Low-complexity unresolved",1772
+"6","Low-complexity unresolved",12
+"7","Low-complexity unresolved",0
+"8","Low-complexity unresolved",11
+"9","Low-complexity unresolved",1
+"10","Low-complexity unresolved",2
+"11","Low-complexity unresolved",1
+"12","Low-complexity unresolved",0
+"13","Low-complexity unresolved",0
+"14","Low-complexity unresolved",0
+"15","Low-complexity unresolved",4
+"16","Low-complexity unresolved",171
+"17","Low-complexity unresolved",5
+"18","Low-complexity unresolved",4
+"19","Low-complexity unresolved",0
+"20","Low-complexity unresolved",0
+"21","Low-complexity unresolved",1
+"22","Low-complexity unresolved",0
+"23","Low-complexity unresolved",1
+"0","Macrophages",0
+"1","Macrophages",0
+"2","Macrophages",0
+"3","Macrophages",0
+"4","Macrophages",0
+"5","Macrophages",1
+"6","Macrophages",0
+"7","Macrophages",179
+"8","Macrophages",2
+"9","Macrophages",0
+"10","Macrophages",0
+"11","Macrophages",0
+"12","Macrophages",0
+"13","Macrophages",2
+"14","Macrophages",0
+"15","Macrophages",0
+"16","Macrophages",388
+"17","Macrophages",0
+"18","Macrophages",0
+"19","Macrophages",0
+"20","Macrophages",0
+"21","Macrophages",0
+"22","Macrophages",0
+"23","Macrophages",0
+"0","Mixed-lineage unresolved",19
+"1","Mixed-lineage unresolved",1
+"2","Mixed-lineage unresolved",0
+"3","Mixed-lineage unresolved",0
+"4","Mixed-lineage unresolved",0
+"5","Mixed-lineage unresolved",4
+"6","Mixed-lineage unresolved",2
+"7","Mixed-lineage unresolved",0
+"8","Mixed-lineage unresolved",0
+"9","Mixed-lineage unresolved",0
+"10","Mixed-lineage unresolved",0
+"11","Mixed-lineage unresolved",0
+"12","Mixed-lineage unresolved",0
+"13","Mixed-lineage unresolved",0
+"14","Mixed-lineage unresolved",0
+"15","Mixed-lineage unresolved",0
+"16","Mixed-lineage unresolved",0
+"17","Mixed-lineage unresolved",0
+"18","Mixed-lineage unresolved",0
+"19","Mixed-lineage unresolved",0
+"20","Mixed-lineage unresolved",0
+"21","Mixed-lineage unresolved",0
+"22","Mixed-lineage unresolved",0
+"23","Mixed-lineage unresolved",31
+"0","Monocytes",0
+"1","Monocytes",0
+"2","Monocytes",0
+"3","Monocytes",0
+"4","Monocytes",0
+"5","Monocytes",9
+"6","Monocytes",0
+"7","Monocytes",1866
+"8","Monocytes",0
+"9","Monocytes",0
+"10","Monocytes",0
+"11","Monocytes",0
+"12","Monocytes",0
+"13","Monocytes",634
+"14","Monocytes",0
+"15","Monocytes",0
+"16","Monocytes",1
+"17","Monocytes",0
+"18","Monocytes",2
+"19","Monocytes",0
+"20","Monocytes",0
+"21","Monocytes",0
+"22","Monocytes",0
+"23","Monocytes",0
+"0","Neutrophils",0
+"1","Neutrophils",0
+"2","Neutrophils",0
+"3","Neutrophils",0
+"4","Neutrophils",0
+"5","Neutrophils",0
+"6","Neutrophils",0
+"7","Neutrophils",0
+"8","Neutrophils",1568
+"9","Neutrophils",0
+"10","Neutrophils",0
+"11","Neutrophils",0
+"12","Neutrophils",0
+"13","Neutrophils",0
+"14","Neutrophils",0
+"15","Neutrophils",0
+"16","Neutrophils",2
+"17","Neutrophils",0
+"18","Neutrophils",0
+"19","Neutrophils",0
+"20","Neutrophils",203
+"21","Neutrophils",0
+"22","Neutrophils",0
+"23","Neutrophils",0
+"0","NK/ILC-like cells",0
+"1","NK/ILC-like cells",2
+"2","NK/ILC-like cells",0
+"3","NK/ILC-like cells",0
+"4","NK/ILC-like cells",0
+"5","NK/ILC-like cells",0
+"6","NK/ILC-like cells",0
+"7","NK/ILC-like cells",0
+"8","NK/ILC-like cells",0
+"9","NK/ILC-like cells",1296
+"10","NK/ILC-like cells",10
+"11","NK/ILC-like cells",904
+"12","NK/ILC-like cells",0
+"13","NK/ILC-like cells",0
+"14","NK/ILC-like cells",3
+"15","NK/ILC-like cells",0
+"16","NK/ILC-like cells",1
+"17","NK/ILC-like cells",0
+"18","NK/ILC-like cells",0
+"19","NK/ILC-like cells",0
+"20","NK/ILC-like cells",0
+"21","NK/ILC-like cells",0
+"22","NK/ILC-like cells",0
+"23","NK/ILC-like cells",0
+"0","pDC",0
+"1","pDC",0
+"2","pDC",0
+"3","pDC",0
+"4","pDC",0
+"5","pDC",1
+"6","pDC",0
+"7","pDC",0
+"8","pDC",0
+"9","pDC",0
+"10","pDC",0
+"11","pDC",0
+"12","pDC",640
+"13","pDC",0
+"14","pDC",0
+"15","pDC",0
+"16","pDC",0
+"17","pDC",21
+"18","pDC",0
+"19","pDC",0
+"20","pDC",0
+"21","pDC",0
+"22","pDC",0
+"23","pDC",0
+"0","T cells",0
+"1","T cells",3171
+"2","T cells",2640
+"3","T cells",2434
+"4","T cells",2361
+"5","T cells",71
+"6","T cells",2332
+"7","T cells",0
+"8","T cells",0
+"9","T cells",0
+"10","T cells",1090
+"11","T cells",9
+"12","T cells",0
+"13","T cells",0
+"14","T cells",13
+"15","T cells",0
+"16","T cells",12
+"17","T cells",0
+"18","T cells",1
+"19","T cells",261
+"20","T cells",0
+"21","T cells",1
+"22","T cells",0
+"23","T cells",0

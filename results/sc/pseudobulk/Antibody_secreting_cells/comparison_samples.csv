@@ -1,0 +1,7 @@
+"sample_id","population","aggregate_id","condition","capture","n_cells","total_umi"
+"tag10","Antibody_secreting_cells","Antibody_secreting_cells__tag10","aclf_ccs1477","GSM9868024",29,707558
+"tag11","Antibody_secreting_cells","Antibody_secreting_cells__tag11","aclf_ccs1477","GSM9868024",39,818721
+"tag12","Antibody_secreting_cells","Antibody_secreting_cells__tag12","aclf_ccs1477","GSM9868024",42,699379
+"tag04","Antibody_secreting_cells","Antibody_secreting_cells__tag04","aclf_vehicle","GSM9868023",39,1027872
+"tag05","Antibody_secreting_cells","Antibody_secreting_cells__tag05","aclf_vehicle","GSM9868023",24,548503
+"tag06","Antibody_secreting_cells","Antibody_secreting_cells__tag06","aclf_vehicle","GSM9868023",41,855508

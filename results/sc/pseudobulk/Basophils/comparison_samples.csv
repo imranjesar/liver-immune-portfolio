@@ -1,0 +1,7 @@
+"sample_id","population","aggregate_id","condition","capture","n_cells","total_umi"
+"tag10","Basophils","Basophils__tag10","aclf_ccs1477","GSM9868024",9,105942
+"tag11","Basophils","Basophils__tag11","aclf_ccs1477","GSM9868024",15,134068
+"tag12","Basophils","Basophils__tag12","aclf_ccs1477","GSM9868024",3,23046
+"tag04","Basophils","Basophils__tag04","aclf_vehicle","GSM9868023",26,184115
+"tag05","Basophils","Basophils__tag05","aclf_vehicle","GSM9868023",13,131511
+"tag06","Basophils","Basophils__tag06","aclf_vehicle","GSM9868023",16,138117

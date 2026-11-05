@@ -1,0 +1,19 @@
+{
+  "config": {
+    "seed": 20261103,
+    "comparison": "aclf_ccs1477_vs_aclf_vehicle",
+    "reference": "aclf_vehicle",
+    "treatment": "aclf_ccs1477",
+    "min_cells_each_mouse": 20,
+    "min_umi_each_mouse": 10000,
+    "min_gene_count": 10,
+    "min_gene_samples": 3,
+    "alpha": 0.05,
+    "size_factors": "poscounts",
+    "leave_one_mouse_out": true,
+    "inclusion": "High-confidence reviewed population; no baseline/new-cluster holds; no rate-sensitive model call; no strong B/T coexpression screen"
+  },
+  "annotation_sha256": "71c175d1342ab9062a09e2678de7cd33dcbdad6d6c5c3e61c45847423882f739",
+  "input_sha256": "d192b2837fc27a0c8cc50f11b94d2d08f843a9c6b9c093c6c891b0340298e517",
+  "population_map_sha256": "f8f356362e0a64aad5a375830c7c5009aba3d6adc577f4738706e75828872b71"
+}

@@ -1,0 +1,7 @@
+"sample_id","population","aggregate_id","condition","capture","n_cells","total_umi"
+"tag10","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag10","aclf_ccs1477","GSM9868024",15,204426
+"tag11","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag11","aclf_ccs1477","GSM9868024",7,101954
+"tag12","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag12","aclf_ccs1477","GSM9868024",15,200504
+"tag04","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag04","aclf_vehicle","GSM9868023",9,113770
+"tag05","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag05","aclf_vehicle","GSM9868023",21,230595
+"tag06","Ltf_Ngp_neutrophils","Ltf_Ngp_neutrophils__tag06","aclf_vehicle","GSM9868023",24,281999

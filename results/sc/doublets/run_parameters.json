@@ -1,0 +1,35 @@
+{
+  "config": {
+    "seed": 20261103,
+    "min_features": 500,
+    "max_features": 6000,
+    "max_mito_percent": 20,
+    "doublet_rate_scenarios": [0.025, 0.05, 0.1],
+    "rate_interpretation": "Stress scenarios for residual post-tag-filtering doublets; not measured BD capture rates",
+    "doublet_features": 1352,
+    "doublet_dimensions": 20,
+    "artificial_doublets_per_capture": 3000,
+    "removal_rule": "Predicted doublet in all three scenarios, per capture",
+    "pca_dimensions": 30,
+    "clustering_dimensions": 20,
+    "resolution": 0.4
+  },
+  "baseline_sha256": "749efed4ce424d0f8cafcc39ea29276665a929340bae61193ffa4936e4eea288",
+  "dependencies": {
+    "scDblFinder": "1.22.0",
+    "xgboost": "1.7.11.1",
+    "scater": "1.36.0",
+    "scran": "1.36.0",
+    "scuttle": "1.18.0",
+    "bluster": "1.18.0",
+    "BiocSingular": "1.24.0",
+    "BiocNeighbors": "2.2.0",
+    "beachmat": "2.24.0",
+    "metapod": "1.16.0",
+    "ScaledMatrix": "1.16.0",
+    "assorthead": "1.2.0",
+    "edgeR": "4.6.3",
+    "S4Vectors": "0.46.0"
+  },
+  "signature": "63d566b729b9f12cc72e2c05b031ecca"
+}

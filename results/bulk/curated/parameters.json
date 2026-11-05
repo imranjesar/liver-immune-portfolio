@@ -1,0 +1,14 @@
+{
+  "contrast": "liver 72 h minus liver 24 h",
+  "sample_units": "GEO libraries; individual-mouse provenance/pooling not established from retrieved metadata",
+  "n_24h": 4,
+  "n_72h": 5,
+  "seed": 20261103,
+  "gene_filter": "count >=10 in >=3 of nine libraries",
+  "replacement": "disabled",
+  "annotation": "3.21.0",
+  "rank_duplicate_policy": "highest baseMean then original ID; one unambiguous symbol per feature",
+  "fdr": "DE gene BH; Hallmark BH separately per rank variant",
+  "pathway_min": 15,
+  "pathway_max": 500
+}

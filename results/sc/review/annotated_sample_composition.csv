@@ -1,0 +1,127 @@
+"sample_id","broad_type","cells","within_sample_pct"
+"tag01","Antibody-secreting cells",25,0.537172324881822
+"tag02","Antibody-secreting cells",38,0.822510822510823
+"tag03","Antibody-secreting cells",15,0.316856780735108
+"tag04","Antibody-secreting cells",51,0.755555555555556
+"tag05","Antibody-secreting cells",34,0.496495327102804
+"tag06","Antibody-secreting cells",52,0.731364275668073
+"tag10","Antibody-secreting cells",36,0.552316661552623
+"tag11","Antibody-secreting cells",49,0.790450072592354
+"tag12","Antibody-secreting cells",65,0.792586269967077
+"tag01","B cells",1905,40.9325311559948
+"tag02","B cells",1350,29.2207792207792
+"tag03","B cells",405,8.55513307984791
+"tag04","B cells",2598,38.4888888888889
+"tag05","B cells",2338,34.1413551401869
+"tag06","B cells",2762,38.8466947960619
+"tag10","B cells",2586,39.6747468548635
+"tag11","B cells",1979,31.9245039522504
+"tag12","B cells",2729,33.2764297036947
+"tag01","Basophils",8,0.171895143962183
+"tag02","Basophils",25,0.541125541125541
+"tag03","Basophils",12,0.253485424588086
+"tag04","Basophils",28,0.414814814814815
+"tag05","Basophils",19,0.277453271028037
+"tag06","Basophils",28,0.393811533052039
+"tag10","Basophils",10,0.153421294875729
+"tag11","Basophils",19,0.306501048556219
+"tag12","Basophils",9,0.109742714303134
+"tag01","cDC-like cells",55,1.18177911474001
+"tag02","cDC-like cells",53,1.14718614718615
+"tag03","cDC-like cells",112,2.36586396282214
+"tag04","cDC-like cells",52,0.77037037037037
+"tag05","cDC-like cells",66,0.963785046728972
+"tag06","cDC-like cells",52,0.731364275668073
+"tag10","cDC-like cells",65,0.997238416692237
+"tag11","cDC-like cells",48,0.774318438457816
+"tag12","cDC-like cells",49,0.59748811120595
+"tag01","Cycling unresolved",93,1.99828104856038
+"tag02","Cycling unresolved",89,1.92640692640693
+"tag03","Cycling unresolved",40,0.844951415293621
+"tag04","Cycling unresolved",134,1.98518518518519
+"tag05","Cycling unresolved",100,1.46028037383178
+"tag06","Cycling unresolved",108,1.51898734177215
+"tag10","Cycling unresolved",176,2.70021478981283
+"tag11","Cycling unresolved",156,2.5165349249879
+"tag12","Cycling unresolved",179,2.1826606511401
+"tag01","Eosinophil-like cells",15,0.322303394929093
+"tag02","Eosinophil-like cells",23,0.497835497835498
+"tag03","Eosinophil-like cells",1,0.0211237853823405
+"tag04","Eosinophil-like cells",32,0.474074074074074
+"tag05","Eosinophil-like cells",55,0.803154205607477
+"tag06","Eosinophil-like cells",14,0.19690576652602
+"tag10","Eosinophil-like cells",13,0.199447683338447
+"tag11","Eosinophil-like cells",2,0.0322632682690757
+"tag12","Eosinophil-like cells",9,0.109742714303134
+"tag01","Low-complexity unresolved",30,0.644606789858187
+"tag02","Low-complexity unresolved",35,0.757575757575758
+"tag03","Low-complexity unresolved",28,0.591465990705534
+"tag04","Low-complexity unresolved",1220,18.0740740740741
+"tag05","Low-complexity unresolved",1405,20.5169392523364
+"tag06","Low-complexity unresolved",1648,23.1786216596343
+"tag10","Low-complexity unresolved",1609,24.6854863455048
+"tag11","Low-complexity unresolved",1749,28.2142281013067
+"tag12","Low-complexity unresolved",2731,33.3008169735398
+"tag01","Macrophages",52,1.11731843575419
+"tag02","Macrophages",86,1.86147186147186
+"tag03","Macrophages",68,1.43641740599916
+"tag04","Macrophages",93,1.37777777777778
+"tag05","Macrophages",68,0.992990654205608
+"tag06","Macrophages",80,1.12517580872011
+"tag10","Macrophages",57,0.874501380791654
+"tag11","Macrophages",26,0.419422487497984
+"tag12","Macrophages",104,1.26813803194732
+"tag01","Mixed-lineage unresolved",209,4.49076063601203
+"tag02","Mixed-lineage unresolved",138,2.98701298701299
+"tag03","Mixed-lineage unresolved",61,1.28855090832277
+"tag04","Mixed-lineage unresolved",147,2.17777777777778
+"tag05","Mixed-lineage unresolved",138,2.01518691588785
+"tag06","Mixed-lineage unresolved",224,3.15049226441631
+"tag10","Mixed-lineage unresolved",157,2.40871432954894
+"tag11","Mixed-lineage unresolved",103,1.6615583158574
+"tag12","Mixed-lineage unresolved",142,1.731496159005
+"tag01","Monocytes",195,4.18994413407821
+"tag02","Monocytes",351,7.5974025974026
+"tag03","Monocytes",648,13.6882129277567
+"tag04","Monocytes",180,2.66666666666667
+"tag05","Monocytes",382,5.57827102803738
+"tag06","Monocytes",274,3.85372714486639
+"tag10","Monocytes",218,3.34458422829089
+"tag11","Monocytes",196,3.16180029036941
+"tag12","Monocytes",356,4.34093403243507
+"tag01","Neutrophils",164,3.52385045122475
+"tag02","Neutrophils",283,6.12554112554113
+"tag03","Neutrophils",504,10.6463878326996
+"tag04","Neutrophils",268,3.97037037037037
+"tag05","Neutrophils",330,4.81892523364486
+"tag06","Neutrophils",109,1.53305203938115
+"tag10","Neutrophils",99,1.51887081926971
+"tag11","Neutrophils",43,0.693660267785127
+"tag12","Neutrophils",136,1.65833434946958
+"tag01","NK/ILC-like cells",245,5.26428878384186
+"tag02","NK/ILC-like cells",221,4.78354978354978
+"tag03","NK/ILC-like cells",287,6.06252640473173
+"tag04","NK/ILC-like cells",320,4.74074074074074
+"tag05","NK/ILC-like cells",315,4.59988317757009
+"tag06","NK/ILC-like cells",233,3.27707454289733
+"tag10","NK/ILC-like cells",174,2.66953053083768
+"tag11","NK/ILC-like cells",246,3.96838199709631
+"tag12","NK/ILC-like cells",226,2.75576149250091
+"tag01","pDC",78,1.67597765363128
+"tag02","pDC",96,2.07792207792208
+"tag03","pDC",43,0.908322771440642
+"tag04","pDC",76,1.12592592592593
+"tag05","pDC",66,0.963785046728972
+"tag06","pDC",102,1.43459915611814
+"tag10","pDC",89,1.36544952439399
+"tag11","pDC",87,1.40345216970479
+"tag12","pDC",62,0.756005365199366
+"tag01","T cells",1580,33.9492909325312
+"tag02","T cells",1832,39.6536796536797
+"tag03","T cells",2510,53.0207013096747
+"tag04","T cells",1551,22.9777777777778
+"tag05","T cells",1532,22.3714953271028
+"tag06","T cells",1424,20.028129395218
+"tag10","T cells",1229,18.8554771402271
+"tag11","T cells",1496,24.1329246652686
+"tag12","T cells",1404,17.1198634312889

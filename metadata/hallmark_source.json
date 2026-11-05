@@ -1,0 +1,9 @@
+{
+  "url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.2.Mm/mh.all.v2026.2.Mm.symbols.gmt",
+  "version": "2026.2.Mm",
+  "sha256": "a3068abd9d5cba5c4415109dbe5233de27e5e51b027ad7d1e8451251ce67491f",
+  "gene_sets": 50,
+  "species": "Mus musculus",
+  "collection": "MH",
+  "note": "Mouse MSigDB orthology-mapped Hallmark; see MSigDB terms and citations"
+}

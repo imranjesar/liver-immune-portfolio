@@ -1,0 +1,22 @@
+suppressPackageStartupMessages({library(Seurat);library(ggplot2);library(jsonlite)})
+path<-"results/sc/strict500_consensus"
+stopifnot(file.exists(file.path(path,"COMPLETE")))
+s<-readRDS(file.path(path,"seurat.rds"))
+a<-read.delim("config/celltypes_consensus.tsv",colClasses="character")
+guard<-jsonlite::fromJSON("config/celltypes_consensus_signature.json")
+meta<-read.csv(file.path(path,"cell_metadata.csv"),stringsAsFactors=FALSE)
+assignment<-digest::digest(data.frame(cell_id=meta$cell_id,cluster=as.character(meta$seurat_clusters)),algo="sha256")
+if(!identical(assignment,guard$cluster_assignment_sha256))stop("Cluster assignments changed: review the mapping before reapplying annotations")
+stopifnot(setequal(a$cluster,as.character(unique(s$seurat_clusters))),!anyDuplicated(a$cluster))
+i<-match(as.character(s$seurat_clusters),a$cluster)
+for(n in setdiff(names(a),"cluster"))s[[n]]<-a[[n]][i]
+s$baseline_review_hold<-grepl("^hold_",s$baseline_qc_status)
+s$new_cluster_hold<-grepl("^hold_",s$qc_status)
+s$needs_further_review<-s$baseline_review_hold|s$new_cluster_hold|s$rate_sensitive_call
+m<-s[[]];m$cell_id<-rownames(m)
+con<-gzfile(file.path(path,"cell_annotations.csv.gz"),"wt");write.csv(m,con,row.names=FALSE);close(con)
+p<-DimPlot(s,group.by="broad_type",shuffle=TRUE,seed=20261103,raster=TRUE)+ggtitle("Provisional lineages after stricter QC and consensus doublet exclusion")
+ggsave(file.path(path,"annotated_umap.png"),p,width=12,height=7,dpi=160,bg="white")
+p<-DimPlot(s,group.by="needs_further_review",shuffle=TRUE,seed=20261103,raster=TRUE)+ggtitle("Remaining annotation / rate-sensitive review flags")
+ggsave(file.path(path,"remaining_review_flags.png"),p,width=9,height=6,dpi=150,bg="white")
+write.csv(a,file.path(path,"annotation_mapping.csv"),row.names=FALSE)

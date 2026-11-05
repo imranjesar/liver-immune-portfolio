@@ -1,0 +1,14 @@
+{
+  "seed": 20261103,
+  "comparison": "aclf_ccs1477_vs_aclf_vehicle",
+  "reference": "aclf_vehicle",
+  "treatment": "aclf_ccs1477",
+  "min_cells_each_mouse": 20,
+  "min_umi_each_mouse": 10000,
+  "min_gene_count": 10,
+  "min_gene_samples": 3,
+  "alpha": 0.05,
+  "size_factors": "poscounts",
+  "leave_one_mouse_out": true,
+  "inclusion": "High-confidence reviewed population; no baseline/new-cluster holds; no rate-sensitive model call; no strong B/T coexpression screen"
+}

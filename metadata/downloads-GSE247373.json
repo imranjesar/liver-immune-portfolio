@@ -1,0 +1,11 @@
+[
+  {
+    "accession": "GSE247373",
+    "gsm": "",
+    "title": "",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247373/suppl/GSE247373_countsAll.txt.gz",
+    "filename": "GSE247373_countsAll.txt.gz",
+    "bytes": 390709,
+    "sha256": "97c285e69a4c42980a9cfb86c12bf105c70462f9380ac632fb47bf61e61a05f4"
+  }
+]

@@ -1,0 +1,7 @@
+"PC1","PC2","group","name","sample_id","population","aggregate_id","condition","capture","n_cells","total_umi","sizeFactor"
+-0.51921207416298,4.20765021103994,"aclf_ccs1477","B_cells__tag10","tag10","B_cells","B_cells__tag10","aclf_ccs1477","GSM9868024",2359,17248517,1.12612195950531
+-2.82227042641697,1.50893021421992,"aclf_ccs1477","B_cells__tag11","tag11","B_cells","B_cells__tag11","aclf_ccs1477","GSM9868024",1823,12786422,0.842292068576226
+-4.53984091640201,-2.58939783718625,"aclf_ccs1477","B_cells__tag12","tag12","B_cells","B_cells__tag12","aclf_ccs1477","GSM9868024",2485,17188228,1.12400726168575
+3.20485810195168,1.2884186054835,"aclf_vehicle","B_cells__tag04","tag04","B_cells","B_cells__tag04","aclf_vehicle","GSM9868023",2341,14995726,1.00449457784377
+2.0562809491884,-3.77424219512239,"aclf_vehicle","B_cells__tag05","tag05","B_cells","B_cells__tag05","aclf_vehicle","GSM9868023",2150,13431808,0.897347721279034
+2.62018436584189,-0.641358998434722,"aclf_vehicle","B_cells__tag06","tag06","B_cells","B_cells__tag06","aclf_vehicle","GSM9868023",2517,15384056,1.04057738559062

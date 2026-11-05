@@ -1,0 +1,7 @@
+"PC1","PC2","group","name","sample_id","population","aggregate_id","condition","capture","n_cells","total_umi","sizeFactor"
+-4.87745205290985,1.3944874743312,"aclf_ccs1477","CD4_T_cells__tag10","tag10","CD4_T_cells","CD4_T_cells__tag10","aclf_ccs1477","GSM9868024",207,1697741,0.740241840913325
+0.116096222322336,-3.20708113885792,"aclf_ccs1477","CD4_T_cells__tag11","tag11","CD4_T_cells","CD4_T_cells__tag11","aclf_ccs1477","GSM9868024",267,2120096,0.924914292270441
+-0.22518084600076,-2.09798927883786,"aclf_ccs1477","CD4_T_cells__tag12","tag12","CD4_T_cells","CD4_T_cells__tag12","aclf_ccs1477","GSM9868024",314,2660246,1.1400879366083
+1.55249195169146,1.04061079178084,"aclf_vehicle","CD4_T_cells__tag04","tag04","CD4_T_cells","CD4_T_cells__tag04","aclf_vehicle","GSM9868023",376,2739299,1.22755185936112
+1.4443280373278,1.14509636943151,"aclf_vehicle","CD4_T_cells__tag05","tag05","CD4_T_cells","CD4_T_cells__tag05","aclf_vehicle","GSM9868023",314,2414522,1.06754287812947
+1.98971668756901,1.72487578215223,"aclf_vehicle","CD4_T_cells__tag06","tag06","CD4_T_cells","CD4_T_cells__tag06","aclf_vehicle","GSM9868023",284,2212300,0.977600362425102

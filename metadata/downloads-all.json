@@ -1,0 +1,119 @@
+[
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868022",
+    "title": "Liver CD45+ immune cells, Fibrosis",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868022/suppl/GSM9868022_CCl4_scRNAseq_SMK_SampleTag01_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag01_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 18894536,
+    "sha256": "9dd5390dc0b7d467f16d1148921cf3aa90e95cdfbbc19062d45b84b847d4b227"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868022",
+    "title": "Liver CD45+ immune cells, Fibrosis",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868022/suppl/GSM9868022_CCl4_scRNAseq_SMK_SampleTag02_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag02_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 19317506,
+    "sha256": "be55bc98e5e8eacea253600b6c7286434f2bd5f31f37cc088aca990cf3a2a87a"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868022",
+    "title": "Liver CD45+ immune cells, Fibrosis",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868022/suppl/GSM9868022_CCl4_scRNAseq_SMK_SampleTag03_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868022_CCl4_scRNAseq_SMK_SampleTag03_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 19841386,
+    "sha256": "9e2df038c1c3f27a2c55a007da90abd3d8007351aa5bcb92307cb08a2ea20f4a"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868022",
+    "title": "Liver CD45+ immune cells, Fibrosis",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868022/suppl/GSM9868022_CCl4_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "filename": "GSM9868022_CCl4_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "bytes": 83389,
+    "sha256": "52b2ae14cd298060b8d9095682814f6578d9b655edbc5e0af06652fc1fcd207b"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868023",
+    "title": "Liver CD45+ immune cells, ACLF + Vehicle",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868023/suppl/GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag04_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag04_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 23018898,
+    "sha256": "e5a0c7f2bf64c6b4b384b291de6d693a97a08ce0b7320fe7935121624d7ef50e"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868023",
+    "title": "Liver CD45+ immune cells, ACLF + Vehicle",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868023/suppl/GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag05_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag05_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 23059502,
+    "sha256": "d09fbecc1882f744e29a08c8b3d77b0cce978ba3c406bdffb142eec59940f393"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868023",
+    "title": "Liver CD45+ immune cells, ACLF + Vehicle",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868023/suppl/GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag06_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868023_ACLF_VEH_scRNAseq_SMK_SampleTag06_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 23335992,
+    "sha256": "4945f2c87821427e3e398edcf8c3bfb2a837556381e1033989b70f173e7b0603"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868023",
+    "title": "Liver CD45+ immune cells, ACLF + Vehicle",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868023/suppl/GSM9868023_ACLF_VEH_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "filename": "GSM9868023_ACLF_VEH_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "bytes": 158161,
+    "sha256": "f9537be34e3239130e1d810fba3a4eefe10ae63e75bdedeb83748f091fb4ec49"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868024",
+    "title": "Liver CD45+ immune cells, ACLF + CCS1477",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868024/suppl/GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag10_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag10_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 21928159,
+    "sha256": "b84e4f23a9fb06c4befaef4ac71a9d089ba75c5eaeaada1af652ed164f87c22a"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868024",
+    "title": "Liver CD45+ immune cells, ACLF + CCS1477",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868024/suppl/GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag11_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag11_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 19667006,
+    "sha256": "1555380e2a832f8c1f1714d9cfa3ff8210d9e262323311f9f279010cd3ce4dde"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868024",
+    "title": "Liver CD45+ immune cells, ACLF + CCS1477",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868024/suppl/GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag12_mm_RSEC_MolsPerCell.csv.gz",
+    "filename": "GSM9868024_ACLF_CCS_scRNAseq_SMK_SampleTag12_mm_RSEC_MolsPerCell.csv.gz",
+    "bytes": 25231779,
+    "sha256": "a3aec7ec6feabe28604d1baa84b987da408c525a15561bc0b764b4ecb0e8e53a"
+  },
+  {
+    "accession": "GSE338157",
+    "gsm": "GSM9868024",
+    "title": "Liver CD45+ immune cells, ACLF + CCS1477",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM9868nnn/GSM9868024/suppl/GSM9868024_ACLF_CCS_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "filename": "GSM9868024_ACLF_CCS_scRNAseq_SMK_Sample_Tag_Calls.csv.gz",
+    "bytes": 158426,
+    "sha256": "da0099cdf33b7136b6c9358b0884789e596b619b668efabd1b50be8cc99653e8"
+  },
+  {
+    "accession": "GSE247373",
+    "gsm": "",
+    "title": "",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247373/suppl/GSE247373_countsAll.txt.gz",
+    "filename": "GSE247373_countsAll.txt.gz",
+    "bytes": 390709,
+    "sha256": "97c285e69a4c42980a9cfb86c12bf105c70462f9380ac632fb47bf61e61a05f4"
+  }
+]

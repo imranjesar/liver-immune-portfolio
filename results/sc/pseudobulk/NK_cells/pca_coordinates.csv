@@ -1,0 +1,7 @@
+"PC1","PC2","group","name","sample_id","population","aggregate_id","condition","capture","n_cells","total_umi","sizeFactor"
+-4.88275544573712,-2.41554883203353,"aclf_ccs1477","NK_cells__tag10","tag10","NK_cells","NK_cells__tag10","aclf_ccs1477","GSM9868024",82,700514,0.608174119243629
+2.27549083503748,-2.16911901282757,"aclf_ccs1477","NK_cells__tag11","tag11","NK_cells","NK_cells__tag11","aclf_ccs1477","GSM9868024",135,1157294,0.998916128319612
+2.76118618799336,-2.3240707079405,"aclf_ccs1477","NK_cells__tag12","tag12","NK_cells","NK_cells__tag12","aclf_ccs1477","GSM9868024",118,901067,0.790922286580574
+-0.415453967576858,2.27443158304648,"aclf_vehicle","NK_cells__tag04","tag04","NK_cells","NK_cells__tag04","aclf_vehicle","GSM9868023",218,1636878,1.48384711973488
+0.312547319824728,2.034888463829,"aclf_vehicle","NK_cells__tag05","tag05","NK_cells","NK_cells__tag05","aclf_vehicle","GSM9868023",193,1426206,1.27722671311638
+-0.0510149295415985,2.59941850592614,"aclf_vehicle","NK_cells__tag06","tag06","NK_cells","NK_cells__tag06","aclf_vehicle","GSM9868023",160,1220085,1.09812574991367

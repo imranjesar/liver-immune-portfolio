@@ -1,0 +1,104 @@
+[
+  {
+    "figure": "Figure_1_cell_atlas",
+    "width_mm": 180.0,
+    "height_mm": 113.0,
+    "png_pixels": [
+      4251,
+      2669
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "c6657271c08d8c0f2fab9e2958b29092e18f0d1805dd913cf17f508e661663df",
+      "png": "61b98769519ef077f6d0963d8b4371042aeb1cb05e7fd87c98b5714da85d9f5d",
+      "svg": "48026c2971fde59499112e7bd427a3612987c227a77e06bd0740f48d8509d931"
+    }
+  },
+  {
+    "figure": "Figure_2_mouse_level_expression",
+    "width_mm": 180.0,
+    "height_mm": 180.0,
+    "png_pixels": [
+      4251,
+      4251
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "32a10ce3d3caa71510efe9a89197fd1b64ae4d0014c579baf73c2ca15b0c178a",
+      "png": "9f46b0201fa5d9aa9e1a62afafe116f3d2189e7c95818901924a9dd5f3962046",
+      "svg": "7f09fc398c48f8645d34271a33d33d3c29b49d6c415dc8986a10ef78437c6570"
+    }
+  },
+  {
+    "figure": "Figure_3_hallmark_programs",
+    "width_mm": 180.0,
+    "height_mm": 178.0,
+    "png_pixels": [
+      4251,
+      4204
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "2961c3d48d93e46694e4b2a3503a259cec730700b11926d8a4b329ac198b1d48",
+      "png": "61026700464ac5d6084fc34e4ebec81db9c1c57d80f252d5469088a081104e88",
+      "svg": "3aea26b4dd5f767474c86ebd6f70f43ee3e0c477521368d4319ad9772c63921b"
+    }
+  },
+  {
+    "figure": "Supplementary_Figure_S1_technical_audit",
+    "width_mm": 180.0,
+    "height_mm": 143.0,
+    "png_pixels": [
+      4251,
+      3377
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "22ffaab649ae097c8ab695b08a6c61083b241159ceae80a8853956f9fbba9485",
+      "png": "c02e311300a2eb6e4c1eadf6670392d65a1b5cc9e4fcfbffdd2dc1d8645df9ab",
+      "svg": "345d97428d987786fff6dda8a37ecc34e490acd5328e137a974b15f787b6a140"
+    }
+  },
+  {
+    "figure": "Bulk_Figure_1_expression_and_programs",
+    "width_mm": 180.0,
+    "height_mm": 182.0,
+    "png_pixels": [
+      4251,
+      4299
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "2c78c8a3d3a122162a87ec4e7d3725303e016a1ee12c7262c18d27cfd787a235",
+      "png": "91b4df0f01116ce4c18702a46db2b2d13098b25eba66becec56ff36d3c00ef6b",
+      "svg": "b8b6a3443ee346f79d13d3137cee1fcb6c518afdf54944d33b7e87b11798abdf"
+    }
+  },
+  {
+    "figure": "Bulk_Supplementary_Figure_S1_sensitivity",
+    "width_mm": 180.0,
+    "height_mm": 98.0,
+    "png_pixels": [
+      4251,
+      2314
+    ],
+    "png_dpi": 600,
+    "embedded_fonts": true,
+    "vector_pdf": true,
+    "sha256": {
+      "pdf": "1f86f7821652efed9102dda78d3cd22fe53a5049bf254b03d8ab8e292ccd9414",
+      "png": "e4d0e03a7734d30b562bb39fd477ea5ea84efe6f1e1413be7718f41481458b9d",
+      "svg": "8693c1a215e5675f09351eecc4700e74e27d1cf8cd2408492862dbb81ac87381"
+    }
+  }
+]
