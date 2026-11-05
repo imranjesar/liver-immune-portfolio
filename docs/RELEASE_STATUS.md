@@ -1,6 +1,6 @@
 # Release status
 
-This repository is a local publication draft. It has not been pushed, assigned a remote, tagged or published. Multimodal AI work is on hold.
+The portfolio was published on November 5, 2026 at [imranjesar/liver-immune-portfolio](https://github.com/imranjesar/liver-immune-portfolio). The first GitHub Actions run passed both offline Python tests and figure-export validation ([run](https://github.com/imranjesar/liver-immune-portfolio/actions/runs/41953888049)). No version tag or formal release has been created. Multimodal AI work is on hold.
 
 ## Completed verification
 
@@ -18,10 +18,10 @@ Machine-readable records: `metadata/reproduction_check.json`, `metadata/isolated
 
 Hydration reused installed binaries; it does **not** establish that every pinned source package can be downloaded and built on a fresh Ubuntu machine. No full source-download installation or complete single-cell rerun was performed in this check. Earlier execution interruptions and corrections remain in `metadata/VALIDATION.md`. Annotation fingerprints deliberately require review if recomputation changes cluster assignments.
 
-GitHub Actions is configured for offline Python and figure-export checks, but has not run remotely. It does not currently perform R installation, GEO downloads or a complete analysis. Before describing this as a fully clean-install validated release, run the documented workflow on a fresh machine or equivalent CI runner and preserve logs.
+GitHub Actions passed its offline Python and figure-export checks on the published initial commit. It does not currently perform R installation, GEO downloads or a complete analysis. Before describing this as a fully clean-install validated release, run the documented workflow on a fresh machine or equivalent CI runner and preserve logs.
 
 ## Publication preparation
 
-The README, source tables, formal figure captions, study citations, gene-set license attribution and environment lock are included. Review the repository name, account, authorship and code/documentation license before creating a public repository. Third-party GEO inputs and MSigDB annotations retain their own terms; no license for them is implied by any future code license. No account identity or authorship has been invented.
+The README, source tables, formal figure captions, study citations, gene-set license attribution and environment lock are included. The account and repository name are now established. No code/documentation license has been selected; publication does not grant a license beyond applicable GitHub terms. A code license can be added after the owner chooses it. Third-party GEO inputs and MSigDB annotations retain their own terms; no license for them is implied by any future code license. No account identity or authorship has been invented.
 
-A source archive supports review without publishing. Large raw matrices and serialized analysis objects are intentionally excluded and can be regenerated from public inputs.
+A local source archive is also available for review. Large raw matrices and serialized analysis objects are intentionally excluded and can be regenerated from public inputs.

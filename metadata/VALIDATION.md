@@ -45,3 +45,10 @@ The GitHub figure-export CI job is configured to check committed exports and man
 - Two bulk figure sets exported as vector PDF/SVG and 600 dpi PNG. Both final PDFs rendered and visually inspected. All six figure sets pass font/vector/resolution/dimension checks. Dimension tolerance is now one PDF point (0.353 mm), reflecting integer-point Cairo page rounding, rather than the earlier insufficient 0.2 mm tolerance.
 - Isolated library: 219 exact lockfile package versions hydrated from installed packages and synchronized by explicit-library restore. Initial default-path no-op excluded. An independent bulk rerun using that library produced 14 byte-identical CSV tables. Existing SC sensitivity, annotation, pseudobulk and Hallmark/source-data checks passed in the same environment. Full fresh source installation and end-to-end single-cell recomputation remain unverified.
 - Public inputs and Python smoke tests rechecked successfully. GitHub Actions is configured but not executed remotely. No commit, remote, public repository or release was created. Multimodal work remains on hold.
+
+
+## GitHub publication: November 5, 2026
+
+- Published the prepared 365-file initial commit to https://github.com/imranjesar/liver-immune-portfolio on main; raw inputs, processed matrices, serialized R objects and authentication files were excluded. Publication audit found no private-key or GitHub-token patterns in selected text files.
+- Initial hosted workflow passed both jobs: offline Python smoke tests and six-set figure-export verification. Run: https://github.com/imranjesar/liver-immune-portfolio/actions/runs/41953888049 . This does not certify a fresh R source installation or full analysis rerun.
+- Confirmed the public README renders and all four main embedded figure previews load successfully. Existing clean-install/single-cell recomputation limitations remain documented. No code license or versioned release was chosen.

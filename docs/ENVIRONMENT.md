@@ -28,3 +28,8 @@ A restore alone does not guarantee that a later plain Rscript command uses the p
 All 219 locked package versions were verified in a new separate library populated by `renv::hydrate(packages=names(lock$Packages), library=..., sources=...)` from installed packages; `renv::restore(library=..., lockfile=...)` then reported synchronization. Explicit package/library arguments are essential: an empty directory with no analysis scripts and default hydration can discover no packages, and a restore using default paths may inspect the active library rather than the intended new library. That preliminary no-op was discarded and is not counted as a restore check.
 
 Using the explicit isolated library, an independent bulk rerun reproduced all 14 CSV tables byte-for-byte, and existing single-cell output checks passed. This verifies locked versions and numerical reproducibility for that bulk rerun. It does not verify a new source download/build of all packages or an end-to-end rerun of single-cell models. See `docs/RELEASE_STATUS.md` and `metadata/reproduction_check.json` for the precise scope. CI now also checks publication export files; neither CI job runs the full R workflow.
+
+
+## Hosted validation after publication
+
+On November 5, 2026, the first public GitHub Actions run passed both the offline Python tests and figure-export validation. Earlier statements that remote CI was unrun describe the pre-publication state. Hosted CI still does not restore R or recompute the full analysis.
